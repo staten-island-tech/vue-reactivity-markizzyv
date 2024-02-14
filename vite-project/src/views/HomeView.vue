@@ -1,33 +1,33 @@
 <template>
   <div>
-    <DestCard
+<DestCard
       v-for="vinyl in vinyls"
       :key="vinyls.name"
       :Vinyl="vinyl"
-    />
+/>
   </div>
 </template>
 
 <script setup>
-
+import DestCard from '@/components/icons/DestCard.vue';
 const vinyls = [
   {
-    name: "Daniel Caesar",
+    name: "Daniel Caesar - Never Enough",
     International: true,
     price: 1300,
-    img: "https://images.unsplash.com/photo-1498307833015-e7b400441eb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80&quot;",
+    img: "https://shop.danielcaesar.com/cdn/shop/products/NEVERENOUGH2LPVINYL_540x.png?v=1679416157",
   },
   {
-    name: "Swiss Mountain Getaway",
+    name: "Sampha - Lahai",
     International: true,
     price: 800,
-    img: "https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1476&q=80&quot;",
+    img: "https://store.sound-merch.com.au/cdn/shop/files/SAMPA-WHITE-VINYL_760x.png?v=1694064104%27",
   },
   {
-    name: "Ibizan Coastal Vacation",
+    name: "Kali Uchis - Red Moon in Venus",
     International: true,
     price: 1200,
-    img: "https://images.unsplash.com/photo-1547138494-97041dec734b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80&quot;",
+    img: "https://th.bing.com/th/id/R.2a3ae860773f6e8ab73fe848eef0c4e3?rik=%2bXWi2ZkD9vOHcw&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f0548%2f6424%2f8961%2fproducts%2fSanstitre-3_c0c07aff-09c8-4372-8aec-a7219d222bbd_grande.png%3fv%3d1674461903&ehk=ASrYhzhYGzFs%2bU76FO4hGxOW1wnv303h%2bG9T1WrHFkA%3d&risl=&pid=ImgRaw&r=0",
   },
   {
     name: "Hawaiian Vacation",

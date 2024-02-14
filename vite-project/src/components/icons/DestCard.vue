@@ -4,6 +4,7 @@
       <img :src="Vinyl.img" alt="" />
       <h2>{{ clicked }}</h2>
       <button @click="increment">Click ME</button>
+      <button @click="secondinc">Press to Play!</button>
     </div>
   </template>
   
@@ -17,6 +18,13 @@
   function increment() {
     clicked.value++;
   }
+
+
+  function secondinc (){
+
+  }
+
+
   </script>
   
   <style scoped>
@@ -24,6 +32,13 @@
     width: 250px;
     height: 300px;
     object-fit: cover;
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    margin: 10px
+   
   }
 
   </style>
