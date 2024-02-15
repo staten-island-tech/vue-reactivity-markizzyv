@@ -1,6 +1,6 @@
 <template>
   <div>
-<DestCard
+<VinylCard
       v-for="vinyl in vinyls"
       :key="vinyls.name"
       :Vinyl="vinyl"
@@ -9,7 +9,7 @@
 </template>
 
 <script setup>
-import DestCard from '@/components/icons/DestCard.vue';
+import VinylCard from '@/components/icons/VinylCard.vue';
 const vinyls = [
   {
     name: "Daniel Caesar - Never Enough",
@@ -30,16 +30,16 @@ const vinyls = [
     img: "https://th.bing.com/th/id/R.2a3ae860773f6e8ab73fe848eef0c4e3?rik=%2bXWi2ZkD9vOHcw&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f0548%2f6424%2f8961%2fproducts%2fSanstitre-3_c0c07aff-09c8-4372-8aec-a7219d222bbd_grande.png%3fv%3d1674461903&ehk=ASrYhzhYGzFs%2bU76FO4hGxOW1wnv303h%2bG9T1WrHFkA%3d&risl=&pid=ImgRaw&r=0",
   },
   {
-    name: "Hawaiian Vacation",
+    name: "???",
     International: false,
     price: 900,
-    img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1173&q=80&quot;",
+    img: "https://shop.travisscott.com/cdn/shop/files/HERO_VINYL_01_UPDATE-_1_1500x.png?v=1690507172",
   },
   {
-    name: "Cascade Mountains",
+    name: "beabadoobee - Beatopia",
     International: false,
     price: 400,
-    img: "https://images.unsplash.com/photo-1511497584788-876760111969?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80&quot;",
+    img: "https://th.bing.com/th/id/OIP.5TzMimczhwi6GaTbd8lXvwHaHa?rs=1&pid=ImgDetMain",
   },
   {
     name: "Egyptian Exploration",
