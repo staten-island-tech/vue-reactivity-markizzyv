@@ -15,7 +15,7 @@ const vinyls = [
     name: "Frank Ocean - Blonde",
     International: true,
     price: 800,
-    img: "https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80&quot;",
+    img: "https://blonded.co/cdn/shop/products/29_blonde-01-b_1_grande.jpg?v=1671294294",
   },
   {
     name: "Daniel Caesar - Never Enough",
@@ -36,7 +36,7 @@ const vinyls = [
     img: "https://th.bing.com/th/id/R.2a3ae860773f6e8ab73fe848eef0c4e3?rik=%2bXWi2ZkD9vOHcw&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f0548%2f6424%2f8961%2fproducts%2fSanstitre-3_c0c07aff-09c8-4372-8aec-a7219d222bbd_grande.png%3fv%3d1674461903&ehk=ASrYhzhYGzFs%2bU76FO4hGxOW1wnv303h%2bG9T1WrHFkA%3d&risl=&pid=ImgRaw&r=0",
   },
   {
-    name: "???",
+    name: "Travis Scott - Utopia",
     International: false,
     price: 900,
     img: "https://shop.travisscott.com/cdn/shop/files/HERO_VINYL_01_UPDATE-_1_1500x.png?v=1690507172",
@@ -48,7 +48,7 @@ const vinyls = [
     img: "https://th.bing.com/th/id/OIP.5TzMimczhwi6GaTbd8lXvwHaHa?rs=1&pid=ImgDetMain",
   },
   {
-    name: "Egyptian Exploration",
+    name: "???",
     International: true,
     price: 800,
     img: "https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80&quot;",
