@@ -3,7 +3,7 @@
       <h1>{{ Vinyl.name }}</h1>
       <img :src="Vinyl.img" alt="" />
       <h2>{{ clicked }}</h2>
-      <button @click="increment">Click ME</button>
+      <button @click="$emit('addToCart')">Add To Cart</button>
       <button @click="secondinc">Press to Play!</button>
     </div>
   </template>
