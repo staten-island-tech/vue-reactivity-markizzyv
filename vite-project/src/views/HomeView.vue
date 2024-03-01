@@ -8,7 +8,7 @@
 />
  </div>
  <div>
-  <VinylCart v-if="length > 0"
+  <VinylCart v-show="cart > 0"
     />
  </div>
 </template>
@@ -16,6 +16,7 @@
 <script setup>
 import VinylCart from '@/components/VinylCart.vue';
 import VinylCard from '@/components/icons/VinylCard.vue';
+import { ref } from 'vue';
 
 const vinyls = [
 {
@@ -62,9 +63,9 @@ const vinyls = [
   },
 ];
 
-let cart=[]
+let cart= ref[{}]
 function AddItem(pair){
-  cart.push(pair)
+  cart.value.push(pair)
   console.log(cart)
 }
 </script>
