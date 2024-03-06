@@ -2,9 +2,9 @@
     <div>
       <h1>{{ Vinyl.name }}</h1>
       <img :src="Vinyl.img" alt="" />
-<!--       <h2>{{ clicked }}</h2> -->
+      <h2>{{ clicked }}</h2>
       <button @click="$emit('addToCart')">Add To Cart</button>
-  <!--     <button @click="secondinc">Press to Play!</button> -->
+      <button @click="secondinc">Press to Play!</button>
     </div>
   </template>
   
@@ -14,7 +14,7 @@
     Vinyl: Object,
   });
   //clicker logic
- /*  const clicked = ref(0);
+  const clicked = ref(0);
   function increment() {
     clicked.value++;
   }
@@ -24,7 +24,7 @@
     
   }
 
- */
+
   </script>
   
   <style scoped>
