@@ -1,11 +1,15 @@
 <template>
     <div>
         <h2>CART</h2>
+        <div v-for="vinyl in cart"
+        :key="vinyl.name">
+        <h3>{{ vinyl.name }}</h3>
+    </div>
     </div>
 </template>
 
-<script>
-    export default {}
+<script setup>
+    
 </script>
 
 <style scoped>

@@ -8,7 +8,7 @@
 />
  </div>
  <div>
-  <VinylCart v-show="cart > 0"
+  <VinylCart :cart="cart"
     />
  </div>
 </template>
