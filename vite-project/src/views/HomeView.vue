@@ -7,11 +7,8 @@
       @addToCart="AddItem(vinyl)"
 />
  </div>
- <div>
- <VinylCard
- :cart = "cart"
- />
- </div>
+
+
 </template>
 
 <script setup>
