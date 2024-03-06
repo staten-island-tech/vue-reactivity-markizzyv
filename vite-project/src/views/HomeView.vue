@@ -7,10 +7,15 @@
       @addToCart="AddItem(vinyl)"
 />
  </div>
+<<<<<<< HEAD
+
+
+=======
  <div>
   <VinylCart v-show="cart > 0"
     />
  </div>
+>>>>>>> parent of 9498383 (s)
 </template>
 
 <script setup>
