@@ -3,6 +3,7 @@
       <h1>{{ Vinyl.name }}</h1>
       <img :src="Vinyl.img" alt="" />
       <h2>{{ clicked }}</h2>
+      <h3>{{ Vinyl.price }}</h3>
       <button @click="$emit('addToCart')">Add To Cart</button>
       <button @click="secondinc">Press to Play!</button>
     </div>
@@ -15,8 +16,9 @@
   });
   //clicker logic
   const clicked = ref(0);
-  function increment() {
+  function $emit() {
     clicked.value++;
+
   }
 
 
