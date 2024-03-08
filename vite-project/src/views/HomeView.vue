@@ -2,7 +2,7 @@
   <div class = "container">
 <VinylCard
       v-for="vinyl in vinyls"
-      :key="vinyls.name"
+      :key="vinyl.name"
       :Vinyl="vinyl"
       @addToCart="AddItem(vinyl)"
 />
@@ -17,6 +17,7 @@
 import VinylCart from '@/components/VinylCart.vue';
 import VinylCard from '@/components/icons/VinylCard.vue';
 import { ref } from 'vue';
+
 
 const vinyls = [
 {
@@ -63,11 +64,13 @@ const vinyls = [
   },
 ];
 
-let cart= ref[{}]
-function AddItem(pair){
-  cart.value.push(pair)
-  console.log(cart)
+const cart = ref([]);
+
+function addToCart(pair) {
+  cart.value.push(pair);
+  console.log(cart.value);
 }
+
 </script>
 
 <style scoped>
@@ -75,9 +78,8 @@ h1 {
   color: red;
 }
 
-.container{
+.container {
   display: flex;
   width: 70vw;
-  
 }
 </style>
