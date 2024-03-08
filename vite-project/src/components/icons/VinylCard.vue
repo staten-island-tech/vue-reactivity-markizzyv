@@ -1,17 +1,17 @@
 <template>
-    <div>
-      <h1>{{ Vinyl.name }}</h1>
-      <img :src="Vinyl.img" alt="" />
-      <h2>{{ clicked }}</h2>
-      <h3>{{ Vinyl.price }}</h3>
-      
-<button @click="addToCart">Add To Cart</button>
-      <button @click="secondinc">Press to Play!</button>
-    </div>
-  </template>
-  
-  <script setup>
-import { defineProps, defineEmits } from "vue";
+  <div>
+    <h1>{{ Vinyl.name }}</h1>
+    <img :src="Vinyl.img" alt="" />
+    <h2>{{ clicked }}</h2>
+    <h3>{{ Vinyl.price }}</h3>
+    
+    <button @click="addToCart">Add To Cart</button>
+    <button @click="playMusic">Press to Play!</button>
+  </div>
+</template>
+
+<script setup>
+import { ref, defineProps, defineEmits } from "vue";
 
 const props = defineProps({
   Vinyl: Object,
@@ -19,14 +19,19 @@ const props = defineProps({
 
 const emit = defineEmits(["addToCart"]);
 
+const clicked = ref(0);
+
 const addToCart = () => {
   emit("addToCart", props.Vinyl); 
   clicked.value++; 
 };
 
+/* const playMusic = () => {
+  const audio = new Audio('Users/mmval/Music/4k Youtube To MP3/sza.mp3');
+  audio.play();
+};
+</script> */
 
-
-</script>
   
   <style scoped>
   img {
