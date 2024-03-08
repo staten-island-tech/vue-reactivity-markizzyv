@@ -4,7 +4,7 @@
       v-for="vinyl in vinyls"
       :key="vinyl.name"
       :Vinyl="vinyl"
-      @addToCart="AddItem(vinyl)"
+      @addToCart="AddItem"
 />
  </div>
  <div>
@@ -66,8 +66,8 @@ const vinyls = [
 
 const cart = ref([]);
 
-function addToCart(pair) {
-  cart.value.push(pair);
+function AddItem(vinyl) {
+  cart.value.push(vinyl);
   console.log(cart.value);
 }
 

@@ -4,33 +4,29 @@
       <img :src="Vinyl.img" alt="" />
       <h2>{{ clicked }}</h2>
       <h3>{{ Vinyl.price }}</h3>
-      <button @click="$emit('addToCart')">Add To Cart</button>
+      
+<button @click="addToCart">Add To Cart</button>
       <button @click="secondinc">Press to Play!</button>
     </div>
   </template>
   
   <script setup>
-  import { ref } from "vue";
-  const props = defineProps({
-    Vinyl: Object,
-  });
-  //clicker logic
-  const clicked = ref(0);
+import { defineProps, defineEmits } from "vue";
 
-  function $emit() {
-    clicked.value++;
+const props = defineProps({
+  Vinyl: Object,
+});
 
-  }
+const emit = defineEmits(["addToCart"]);
 
-
-  function secondinc (){
-    
-  }
+const addToCart = () => {
+  emit("addToCart", props.Vinyl); 
+  clicked.value++; 
+};
 
 
 
-
-  </script>
+</script>
   
   <style scoped>
   img {
