@@ -6,7 +6,6 @@
     <h3>{{ Vinyl.price }}</h3>
     
     <button @click="addToCart">Add To Cart</button>
-    <button @click="playMusic">Press to Play!</button>
   </div>
 </template>
 
@@ -26,14 +25,10 @@ const addToCart = () => {
   clicked.value++; 
 };
 
-/* const playMusic = () => {
-  const audio = new Audio('Users/mmval/Music/4k Youtube To MP3/sza.mp3');
-  audio.play();
-};
-</script> */
+</script> 
 
   
-  <style scoped>
+<style scoped>
   img {
     width: 250px;
     height: 300px;
@@ -49,10 +44,3 @@ const addToCart = () => {
 
   </style>
 
-<!--div id= home
-    div class= product, cart
-    page = cart or product
-    v-if :page = cart 
-    v-if :page = product
-
--->

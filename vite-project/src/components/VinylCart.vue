@@ -8,6 +8,7 @@
           @addToCart="addItemToCart"
        
     />
+   
     </div>
   </template>
   

@@ -6,11 +6,18 @@
       :Vinyl="vinyl"
       @addToCart="AddItem"
 />
- </div>
- <div>
-  <VinylCart :cart="cart"
-    />
- </div>
+  <div class="cart-container">
+  <div v-if="cart.length > 0">
+    <h2 class ="text">CART</h2>
+  <div v-for= '( vinyl , index) in cart' :key=index>
+    <img :src = "vinyl.img" alt="" width="100vw" height="100vw">
+    <h4>{{  vinyl.name }}</h4>
+    <h5>{{ vinyl.price }}</h5>
+
+  </div>
+  </div>
+  </div>
+  </div>
 </template>
 
 <script setup>
@@ -47,29 +54,28 @@ const vinyls = [
   {
     name: "Travis Scott - Utopia",
     International: false,
-    price: 900,
+    price: "$40.50",
     img: "https://shop.travisscott.com/cdn/shop/files/HERO_VINYL_01_UPDATE-_1_1500x.png?v=1690507172",
   },
   {
     name: "beabadoobee - Beatopia",
     International: false,
-    price: 400,
+    price: "$45.50",
     img: "https://th.bing.com/th/id/OIP.5TzMimczhwi6GaTbd8lXvwHaHa?rs=1&pid=ImgDetMain",
   },
   {
     name: "Lil Yachty - Let's Start Here",
     International: true,
-    price: 800,
+    price: "$40.50",
     img: "https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80&quot;",
   },
 ];
 
 const cart = ref([]);
+const AddItem = (vinyl) => {
+  cart.value.push(vinyl)
+};
 
-function AddItem(vinyl) {
-  cart.value.push(vinyl);
-  console.log(cart.value);
-}
 
 </script>
 
@@ -81,5 +87,10 @@ h1 {
 .container {
   display: flex;
   width: 70vw;
+}
+
+.cart-container{
+  color: red;
+  margin-bottom: 100px;
 }
 </style>
